@@ -20,7 +20,7 @@ public class OTP2JGP extends PointOperations{
     private static final PlayerPoints playerPoints;
     private static final int rateOTP2JGP;
     static {
-        playerPoints = new PlayerPoints();
+        playerPoints = PlayerPoints.getInstance();
         rateOTP2JGP = 10;
     }
 

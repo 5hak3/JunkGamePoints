@@ -14,7 +14,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
@@ -42,11 +41,10 @@ public class Ticket2JGP extends PointOperations{
         for (ItemStack item: pInv.getContents()) {
             if (item == null) continue;
             if (item.getType() == Material.PAPER) {
-                ItemMeta meta = item.getItemMeta();
-                if (meta.getCustomModelData() == 101) counts.compute(10, (key, val) -> val+=item.getAmount());
-                else if (meta.getCustomModelData() == 102) counts.compute(100, (key, val) -> val+=item.getAmount());
-                else if (meta.getCustomModelData() == 103) counts.compute(1000, (key, val) -> val+=item.getAmount());
-                else if (meta.getCustomModelData() == 104) counts.compute(10000, (key, val) -> val+=item.getAmount());
+                if (item.isSimilar(JGPTickets.jgpTicket10)) counts.compute(10, (key, val) -> val+=item.getAmount());
+                else if (item.isSimilar(JGPTickets.jgpTicket100)) counts.compute(100, (key, val) -> val+=item.getAmount());
+                else if (item.isSimilar(JGPTickets.jgpTicket1000)) counts.compute(1000, (key, val) -> val+=item.getAmount());
+                else if (item.isSimilar(JGPTickets.jgpTicket10000)) counts.compute(10000, (key, val) -> val+=item.getAmount());
             }
         }
 
@@ -65,23 +63,26 @@ public class Ticket2JGP extends PointOperations{
             Bukkit.getServer().getLogger().info(
                     "[LOG/Ticket2JGP] " + sender.getName() + " が " + sum + "Pt 獲得しました。"
             );
-            HashMap<Integer, ItemStack> failed = pInv.removeItemAnySlot(
-                    JGPTickets.jgpTicket10,
-                    JGPTickets.jgpTicket100,
-                    JGPTickets.jgpTicket1000,
-                    JGPTickets.jgpTicket10000
-            );
-            if (failed.size() != 0) {
-                StringBuilder failedMsg = new StringBuilder("[LOG/Ticket2JGP] 次のアイテムの除去に失敗しました。 [");
-                for (Map.Entry<Integer, ItemStack> ent : failed.entrySet()) {
-                    ItemMeta meta = ent.getValue().getItemMeta();
-                    failedMsg.append(meta.displayName())
-                             .append(" x")
-                             .append(ent.getValue().getAmount())
-                             .append(", ");
-                }
-                failedMsg.append("]");
-                Bukkit.getLogger().info(failedMsg.toString());
+            ItemStack delItem;
+            if (counts.get(10) != 0) {
+                delItem = JGPTickets.jgpTicket10;
+                delItem.setAmount(counts.get(10));
+                pInv.remove(delItem);
+            }
+            if (counts.get(100) != 0) {
+                delItem = JGPTickets.jgpTicket100;
+                delItem.setAmount(counts.get(100));
+                pInv.remove(delItem);
+            }
+            if (counts.get(1000) != 0) {
+                delItem = JGPTickets.jgpTicket1000;
+                delItem.setAmount(counts.get(1000));
+                pInv.remove(delItem);
+            }
+            if (counts.get(10000) != 0) {
+                delItem = JGPTickets.jgpTicket10000;
+                delItem.setAmount(counts.get(10000));
+                pInv.remove(delItem);
             }
             return true;
         }
