@@ -1,0 +1,46 @@
+name: JunkGamesPoints
+version: '${project.version}'
+main: net.azisaba.jg.junkgamespoints.JunkGamesPoints
+api-version: 1.17
+authors: [ 5hak3 ]
+description: Economy Points in Jank Games (using Vault, PlayerPoints)
+
+depend:
+  - Vault
+  - PlayerPoints
+
+permissions:
+  jgp.admin:
+    description: JGPの管理者権限
+    default: op
+  jgp.member:
+    description: JGPの一般権限
+    default: not op
+
+commands:
+  jgp#give:
+    description: JGPを付与します．
+    permission: jgp.admin
+    permission-message: このコマンドは管理者専用です．
+    usage: /<command> [MCID] [AMOUNT] [ByPlName]
+  jgp#take:
+    description: JGPを剥奪します．
+    permission: jgp.admin
+    permission-message: このコマンドは管理者専用です．
+    usage: /<command> [MCID] [AMOUNT] [ByPlName]
+  jgp2ticket:
+    description: JGPを指定したチケットに変換します．
+    permission: jgp.member
+    usage: /<command> [種類] [数]
+  ticket2jgp:
+    description: 手持ちのチケットを全てJGPに変換します．
+    permission: jgp.member
+    usage: /<command>
+  otp2jgp:
+    description: Ontime Pointを指定数分JGPに変換します．
+    permission: jgp.member
+    usage: /<command> [変換するOPTの量]
+  jgp:
+    description: JG Points GUIメニューを開きます．
+    permission: jgp.member
+    usage: /<command>
