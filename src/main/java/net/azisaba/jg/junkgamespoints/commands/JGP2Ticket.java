@@ -23,12 +23,12 @@ public class JGP2Ticket extends PointOperations{
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if (!(sender instanceof Player)) {
-            sender.sendMessage(Component.text("このコマンドはプレイヤー専用です．", TextColor.color(0xff0000)));
+            sender.sendMessage(Component.text("このコマンドはプレイヤー専用です。", TextColor.color(0xff0000)));
             return false;
         }
         if (args.length != 2) {
-            sender.sendMessage(Component.text("チケットの種類と数を指定してください．", TextColor.color(0xff0000)));
-            sender.sendMessage(Component.text("チケットの種類は {10, 100, 1000, 10000} から選んでください．",
+            sender.sendMessage(Component.text("チケットの種類と数を指定してください。", TextColor.color(0xff0000)));
+            sender.sendMessage(Component.text("チケットの種類は {10, 100, 1000, 10000} から選んでください。",
                     TextColor.color(0xff0000)));
             return false;
         }
@@ -53,18 +53,18 @@ public class JGP2Ticket extends PointOperations{
                 break;
 
             default:
-                sender.sendMessage(Component.text(args[0] + "は有効なチケットの種類ではありません．",
+                sender.sendMessage(Component.text(args[0] + "は有効なチケットの種類ではありません。",
                         TextColor.color(0xff0000)));
-                sender.sendMessage(Component.text("チケットの種類は {10, 100, 1000, 10000} から選んでください．",
+                sender.sendMessage(Component.text("チケットの種類は {10, 100, 1000, 10000} から選んでください。",
                         TextColor.color(0xff0000)));
                 return false;
         }
 
         int amount = Integer.parseInt(args[1]);
         if (!(amount > 0 && amount < 65)) {
-            sender.sendMessage(Component.text(args[1] + "は有効な数ではありません．",
+            sender.sendMessage(Component.text(args[1] + "は有効な数ではありません。",
                     TextColor.color(0xff0000)));
-            sender.sendMessage(Component.text("チケットの数は1から64の間の整数で指定してください．",
+            sender.sendMessage(Component.text("チケットの数は1から64の間の整数で指定してください。",
                     TextColor.color(0xff0000)));
             return false;
         }
@@ -77,12 +77,12 @@ public class JGP2Ticket extends PointOperations{
         if (super.onCommand(sender, command, label, reformatArgs)) {
             ((Player) sender).getInventory().addItem(ticket);
             Bukkit.getServer().getLogger().info(
-                    "[LOG/JGP2Ticket] " + sender.getName() + " が " + ticket.getItemMeta().displayName() + " を " + amount + " 枚入手しました．"
+                    "[LOG/JGP2Ticket] " + sender.getName() + " が " + ticket.getItemMeta().displayName() + " を " + amount + " 枚入手しました。"
             );
             return true;
         }
 
-        sender.sendMessage(Component.text("処理に失敗したため取り消しました．", TextColor.color(0xff0000)));
+        sender.sendMessage(Component.text("処理に失敗したため取り消しました。", TextColor.color(0xff0000)));
         return false;
     }
 

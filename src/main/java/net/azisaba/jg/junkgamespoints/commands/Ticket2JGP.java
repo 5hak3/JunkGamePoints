@@ -28,7 +28,7 @@ public class Ticket2JGP extends PointOperations{
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if (!(sender instanceof Player)) {
-            sender.sendMessage(Component.text("このコマンドはプレイヤー専用です．", TextColor.color(0xff0000)));
+            sender.sendMessage(Component.text("このコマンドはプレイヤー専用です。", TextColor.color(0xff0000)));
             return false;
         }
 
@@ -53,7 +53,7 @@ public class Ticket2JGP extends PointOperations{
         int sum = 0;
         for (Map.Entry<Integer, Integer> ent: counts.entrySet()) sum += ent.getKey() * ent.getValue();
         if (sum == 0) {
-            sender.sendMessage(Component.text("JGPチケットを1枚も持っていません．", TextColor.color(0xff0000)));
+            sender.sendMessage(Component.text("JGPチケットを1枚も持っていません。", TextColor.color(0xff0000)));
             return false;
         }
 
@@ -63,7 +63,7 @@ public class Ticket2JGP extends PointOperations{
         };
         if (super.onCommand(sender, command, label, reformatArgs)) {
             Bukkit.getServer().getLogger().info(
-                    "[LOG/Ticket2JGP] " + sender.getName() + " が " + sum + "Pt 獲得しました．"
+                    "[LOG/Ticket2JGP] " + sender.getName() + " が " + sum + "Pt 獲得しました。"
             );
             HashMap<Integer, ItemStack> failed = pInv.removeItemAnySlot(
                     JGPTickets.jgpTicket10,
@@ -72,7 +72,7 @@ public class Ticket2JGP extends PointOperations{
                     JGPTickets.jgpTicket10000
             );
             if (failed.size() != 0) {
-                StringBuilder failedMsg = new StringBuilder("[LOG/Ticket2JGP] 次のアイテムの除去に失敗しました． [");
+                StringBuilder failedMsg = new StringBuilder("[LOG/Ticket2JGP] 次のアイテムの除去に失敗しました。 [");
                 for (Map.Entry<Integer, ItemStack> ent : failed.entrySet()) {
                     ItemMeta meta = ent.getValue().getItemMeta();
                     failedMsg.append(meta.displayName())
@@ -86,7 +86,7 @@ public class Ticket2JGP extends PointOperations{
             return true;
         }
 
-        sender.sendMessage(Component.text("処理に失敗したため取り消しました．", TextColor.color(0xff0000)));
+        sender.sendMessage(Component.text("処理に失敗したため取り消しました。", TextColor.color(0xff0000)));
         return false;
     }
 

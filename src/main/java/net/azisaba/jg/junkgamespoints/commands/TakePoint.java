@@ -13,9 +13,9 @@ import org.jetbrains.annotations.NotNull;
 
 public class TakePoint extends PointOperations{
     public TakePoint() {
-        this.argLenErr = Component.text("剥奪元とポイント数を指定してください．", TextColor.color(0xff0000));
-        this.negAmount = Component.text("剥奪するポイント数は正数を指定してください．", TextColor.color(0xff0000));
-        this.insufFunds = Component.text("対象の残高が不足しています．", TextColor.color(0xff0000));
+        this.argLenErr = Component.text("剥奪元とポイント数を指定してください。", TextColor.color(0xff0000));
+        this.negAmount = Component.text("剥奪するポイント数は正数を指定してください。", TextColor.color(0xff0000));
+        this.insufFunds = Component.text("対象の残高が不足しています。", TextColor.color(0xff0000));
         this.success = Component.text("剥奪に成功しました！", TextColor.color(0x00ffff));
     }
 
@@ -24,18 +24,18 @@ public class TakePoint extends PointOperations{
         if (super.onCommand(sender, command, label, args)) {
             if (args.length < 3) {
                 Bukkit.getServer().getLogger().info(
-                        "[LOG/TakePt] " + sender.getName() + " が " + args[0] + " に " + args[1] + "Pt 剥奪しました．"
+                        "[LOG/TakePt] " + sender.getName() + " が " + args[0] + " に " + args[1] + "Pt 剥奪しました。"
                 );
             }
             else {
                 Bukkit.getServer().getLogger().info(
-                        "[LOG/TakePt] " + args[2] + " が " + args[0] + " に " + args[1] + "Pt 剥奪しました．"
+                        "[LOG/TakePt] " + args[2] + " が " + args[0] + " に " + args[1] + "Pt 剥奪しました。"
                 );
             }
             return true;
         }
 
-        sender.sendMessage(Component.text("処理に失敗したため取り消しました．", TextColor.color(0xff0000)));
+        sender.sendMessage(Component.text("処理に失敗したため取り消しました。", TextColor.color(0xff0000)));
         return false;
     }
 

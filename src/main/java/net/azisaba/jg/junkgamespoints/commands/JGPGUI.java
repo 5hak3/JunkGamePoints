@@ -86,109 +86,109 @@ public class JGPGUI implements CommandExecutor, Listener {
             pane_10_1 = new ItemStack(Material.ORANGE_STAINED_GLASS_PANE);
             meta = pane_10_1.getItemMeta();
             meta.displayName(Component.text("10JGPチケット x1", TextColor.color(0xff7f00)));
-            meta.lore(Collections.singletonList(Component.text("10JGPチケットを1枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("10JGPチケットを1枚獲得します。")));
             meta.setCustomModelData(999);
             pane_10_1.setItemMeta(meta);
 
             pane_10_4 = new ItemStack(Material.ORANGE_STAINED_GLASS_PANE);
             meta = pane_10_4.getItemMeta();
             meta.displayName(Component.text("10JGPチケット x4", TextColor.color(0xff7f00)));
-            meta.lore(Collections.singletonList(Component.text("10JGPチケットを4枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("10JGPチケットを4枚獲得します。")));
             meta.setCustomModelData(999);
             pane_10_4.setItemMeta(meta);
 
             pane_10_8 = new ItemStack(Material.ORANGE_STAINED_GLASS_PANE);
             meta = pane_10_8.getItemMeta();
             meta.displayName(Component.text("10JGPチケット x8", TextColor.color(0xff7f00)));
-            meta.lore(Collections.singletonList(Component.text("10JGPチケットを8枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("10JGPチケットを8枚獲得します。")));
             meta.setCustomModelData(999);
             pane_10_8.setItemMeta(meta);
 
             pane_10_16 = new ItemStack(Material.ORANGE_STAINED_GLASS_PANE);
             meta = pane_10_16.getItemMeta();
             meta.displayName(Component.text("10JGPチケット x16", TextColor.color(0xff7f00)));
-            meta.lore(Collections.singletonList(Component.text("10JGPチケットを16枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("10JGPチケットを16枚獲得します。")));
             meta.setCustomModelData(999);
             pane_10_16.setItemMeta(meta);
             pane_100_1 = new ItemStack(Material.YELLOW_STAINED_GLASS_PANE);
             meta = pane_100_1.getItemMeta();
             meta.displayName(Component.text("100JGPチケット x1", TextColor.color(0xffff00)));
-            meta.lore(Collections.singletonList(Component.text("100JGPチケットを1枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("100JGPチケットを1枚獲得します。")));
             meta.setCustomModelData(999);
             pane_100_1.setItemMeta(meta);
 
             pane_100_4 = new ItemStack(Material.YELLOW_STAINED_GLASS_PANE);
             meta = pane_100_4.getItemMeta();
             meta.displayName(Component.text("100JGPチケット x4", TextColor.color(0xffff00)));
-            meta.lore(Collections.singletonList(Component.text("100JGPチケットを4枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("100JGPチケットを4枚獲得します。")));
             meta.setCustomModelData(999);
             pane_100_4.setItemMeta(meta);
 
             pane_100_8 = new ItemStack(Material.YELLOW_STAINED_GLASS_PANE);
             meta = pane_100_8.getItemMeta();
             meta.displayName(Component.text("100JGPチケット x8", TextColor.color(0xffff00)));
-            meta.lore(Collections.singletonList(Component.text("100JGPチケットを8枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("100JGPチケットを8枚獲得します。")));
             meta.setCustomModelData(999);
             pane_100_8.setItemMeta(meta);
 
             pane_100_16 = new ItemStack(Material.YELLOW_STAINED_GLASS_PANE);
             meta = pane_100_16.getItemMeta();
             meta.displayName(Component.text("100JGPチケット x16", TextColor.color(0xffff00)));
-            meta.lore(Collections.singletonList(Component.text("100JGPチケットを16枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("100JGPチケットを16枚獲得します。")));
             meta.setCustomModelData(999);
             pane_100_16.setItemMeta(meta);
             pane_1000_1 = new ItemStack(Material.LIME_STAINED_GLASS_PANE);
             meta = pane_1000_1.getItemMeta();
             meta.displayName(Component.text("1000JGPチケット x1", TextColor.color(0x7fff00)));
-            meta.lore(Collections.singletonList(Component.text("1000JGPチケットを1枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("1000JGPチケットを1枚獲得します。")));
             meta.setCustomModelData(999);
             pane_1000_1.setItemMeta(meta);
 
             pane_1000_4 = new ItemStack(Material.LIME_STAINED_GLASS_PANE);
             meta = pane_1000_4.getItemMeta();
             meta.displayName(Component.text("1000JGPチケット x4", TextColor.color(0x7fff00)));
-            meta.lore(Collections.singletonList(Component.text("1000JGPチケットを4枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("1000JGPチケットを4枚獲得します。")));
             meta.setCustomModelData(999);
             pane_1000_4.setItemMeta(meta);
 
             pane_1000_8 = new ItemStack(Material.LIME_STAINED_GLASS_PANE);
             meta = pane_1000_8.getItemMeta();
             meta.displayName(Component.text("1000JGPチケット x8", TextColor.color(0x7fff00)));
-            meta.lore(Collections.singletonList(Component.text("1000JGPチケットを8枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("1000JGPチケットを8枚獲得します。")));
             meta.setCustomModelData(999);
             pane_1000_8.setItemMeta(meta);
 
             pane_1000_16 = new ItemStack(Material.LIME_STAINED_GLASS_PANE);
             meta = pane_1000_16.getItemMeta();
             meta.displayName(Component.text("1000JGPチケット x16", TextColor.color(0x7fff00)));
-            meta.lore(Collections.singletonList(Component.text("1000JGPチケットを16枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("1000JGPチケットを16枚獲得します。")));
             meta.setCustomModelData(999);
             pane_1000_16.setItemMeta(meta);
             pane_10000_1 = new ItemStack(Material.LIME_STAINED_GLASS_PANE);
             meta = pane_10000_1.getItemMeta();
             meta.displayName(Component.text("10000JGPチケット x1", TextColor.color(0x00ff00)));
-            meta.lore(Collections.singletonList(Component.text("10000JGPチケットを1枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("10000JGPチケットを1枚獲得します。")));
             meta.setCustomModelData(999);
             pane_10000_1.setItemMeta(meta);
 
             pane_10000_4 = new ItemStack(Material.LIME_STAINED_GLASS_PANE);
             meta = pane_10000_4.getItemMeta();
             meta.displayName(Component.text("10000JGPチケット x4", TextColor.color(0x00ff00)));
-            meta.lore(Collections.singletonList(Component.text("10000JGPチケットを4枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("10000JGPチケットを4枚獲得します。")));
             meta.setCustomModelData(999);
             pane_10000_4.setItemMeta(meta);
 
             pane_10000_8 = new ItemStack(Material.LIME_STAINED_GLASS_PANE);
             meta = pane_10000_8.getItemMeta();
             meta.displayName(Component.text("10000JGPチケット x8", TextColor.color(0x00ff00)));
-            meta.lore(Collections.singletonList(Component.text("10000JGPチケットを8枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("10000JGPチケットを8枚獲得します。")));
             meta.setCustomModelData(999);
             pane_10000_8.setItemMeta(meta);
 
             pane_10000_16 = new ItemStack(Material.LIME_STAINED_GLASS_PANE);
             meta = pane_10000_16.getItemMeta();
             meta.displayName(Component.text("10000JGPチケット x16", TextColor.color(0x00ff00)));
-            meta.lore(Collections.singletonList(Component.text("10000JGPチケットを16枚獲得します．")));
+            meta.lore(Collections.singletonList(Component.text("10000JGPチケットを16枚獲得します。")));
             meta.setCustomModelData(999);
             pane_10000_16.setItemMeta(meta);
 
@@ -196,8 +196,8 @@ public class JGPGUI implements CommandExecutor, Listener {
             meta = pane_ott.getItemMeta();
             meta.displayName(Component.text("オンタイムチケット", TextColor.color(0x55ff55)));
             meta.lore(Arrays.asList(
-                    Component.text("ログインしていると一定時間ごとにもらえる．", TextColor.color(0xffffff)),
-                    Component.text("換金，特殊アイテムとの交換等に使える．", TextColor.color(0xffffff))
+                    Component.text("ログインしていると一定時間ごとにもらえる。", TextColor.color(0xffffff)),
+                    Component.text("換金、特殊アイテムとの交換等に使える。", TextColor.color(0xffffff))
             ));
             meta.addEnchant(Enchantment.DURABILITY, 0, false);
             meta.setCustomModelData(0);
@@ -208,7 +208,7 @@ public class JGPGUI implements CommandExecutor, Listener {
             meta = pane_otp_100.getItemMeta();
             meta.displayName(Component.text("OTP 100 → JGP 1000", TextColor.color(0x0000ff)));
             meta.lore(Arrays.asList(
-                    Component.text("OTPをJGPに変換します．"),
+                    Component.text("OTPをJGPに変換します。"),
                     Component.text("注意！JGPに変換したOTPはOTPに戻すことができません！")
             ));
             meta.setCustomModelData(999);
@@ -218,7 +218,7 @@ public class JGPGUI implements CommandExecutor, Listener {
             meta = pane_otp_500.getItemMeta();
             meta.displayName(Component.text("OTP 500 → JGP 5000", TextColor.color(0x0000ff)));
             meta.lore(Arrays.asList(
-                    Component.text("OTPをJGPに変換します．"),
+                    Component.text("OTPをJGPに変換します。"),
                     Component.text("注意！JGPに変換したOTPはOTPに戻すことができません！")
             ));
             meta.setCustomModelData(999);
@@ -228,7 +228,7 @@ public class JGPGUI implements CommandExecutor, Listener {
             meta = pane_otp_1000.getItemMeta();
             meta.displayName(Component.text("OTP 1000 → JGP 10000", TextColor.color(0x0000ff)));
             meta.lore(Arrays.asList(
-                    Component.text("OTPをJGPに変換します．"),
+                    Component.text("OTPをJGPに変換します。"),
                     Component.text("注意！JGPに変換したOTPはOTPに戻すことができません！")
             ));
             meta.setCustomModelData(999);
@@ -238,7 +238,7 @@ public class JGPGUI implements CommandExecutor, Listener {
             meta = pane_otp_5000.getItemMeta();
             meta.displayName(Component.text("OTP 5000 → JGP 50000", TextColor.color(0x0000ff)));
             meta.lore(Arrays.asList(
-                    Component.text("OTPをJGPに変換します．"),
+                    Component.text("OTPをJGPに変換します。"),
                     Component.text("注意！JGPに変換したOTPはOTPに戻すことができません！")
             ));
             meta.setCustomModelData(999);
@@ -247,14 +247,14 @@ public class JGPGUI implements CommandExecutor, Listener {
             pane_restore = new ItemStack(Material.PURPLE_STAINED_GLASS_PANE);
             meta = pane_restore.getItemMeta();
             meta.displayName(Component.text("全てのチケットをJGPに戻す", TextColor.color(0x7f00ff)));
-            meta.lore(Collections.singletonList(Component.text("JGPチケットを全てJGPに戻します．")));
+            meta.lore(Collections.singletonList(Component.text("JGPチケットを全てJGPに戻します。")));
             meta.setCustomModelData(999);
             pane_restore.setItemMeta(meta);
 
             pane_cancel = new ItemStack(Material.RED_STAINED_GLASS_PANE);
             meta = pane_cancel.getItemMeta();
             meta.displayName(Component.text("メニューを閉じる", TextColor.color(0xff0000)));
-            meta.lore(Collections.singletonList(Component.text("このメニューを閉じます．")));
+            meta.lore(Collections.singletonList(Component.text("このメニューを閉じます。")));
             meta.setCustomModelData(999);
             pane_cancel.setItemMeta(meta);
         }
@@ -268,7 +268,7 @@ public class JGPGUI implements CommandExecutor, Listener {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if (!(sender instanceof Player)) {
-            sender.sendMessage(Component.text("このコマンドはプレイヤー専用です．", TextColor.color(0xff0000)));
+            sender.sendMessage(Component.text("このコマンドはプレイヤー専用です。", TextColor.color(0xff0000)));
             return false;
         }
 
@@ -282,7 +282,7 @@ public class JGPGUI implements CommandExecutor, Listener {
         if (!(event.getInventory().getHolder() instanceof JGPHolder)) return;
 
         event.setCancelled(true);
-        Player player = (Player) event.getView().getPlayer();
+        Player player = (Player) event.getWhoClicked();
         ItemStack clicked = event.getCurrentItem();
         if (clicked == null) return;
 

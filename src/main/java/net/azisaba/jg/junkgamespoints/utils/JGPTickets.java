@@ -24,7 +24,7 @@ public class JGPTickets {
         meta.displayName(Component.text("10JGPチケット", TextColor.color(0xff7f00)));
         meta.lore(Arrays.asList(
                 Component.text("10JGP分のチケット"),
-                Component.text("/ticket2jgp コマンドでJGPに戻せます．")
+                Component.text("/ticket2jgp コマンドでJGPに戻せます。")
         ));
         meta.addEnchant(Enchantment.DURABILITY, 0, false);
         meta.setCustomModelData(101);
@@ -36,7 +36,7 @@ public class JGPTickets {
         meta.displayName(Component.text("100JGPチケット", TextColor.color(0xffff00)));
         meta.lore(Arrays.asList(
                 Component.text("100JGP分のチケット"),
-                Component.text("/ticket2jgp コマンドでJGPに戻せます．")
+                Component.text("/ticket2jgp コマンドでJGPに戻せます。")
         ));
         meta.addEnchant(Enchantment.DURABILITY, 0, false);
         meta.setCustomModelData(102);
@@ -48,7 +48,7 @@ public class JGPTickets {
         meta.displayName(Component.text("1000JGPチケット", TextColor.color(0x7fff00)));
         meta.lore(Arrays.asList(
                 Component.text("1000JGP分のチケット"),
-                Component.text("/ticket2jgp コマンドでJGPに戻せます．")
+                Component.text("/ticket2jgp コマンドでJGPに戻せます。")
         ));
         meta.addEnchant(Enchantment.DURABILITY, 0, false);
         meta.setCustomModelData(103);
@@ -60,7 +60,7 @@ public class JGPTickets {
         meta.displayName(Component.text("10000JGPチケット", TextColor.color(0x00ff00)));
         meta.lore(Arrays.asList(
                 Component.text("10000JGP分のチケット"),
-                Component.text("/ticket2jgp コマンドでJGPに戻せます．")
+                Component.text("/ticket2jgp コマンドでJGPに戻せます。")
         ));
         meta.addEnchant(Enchantment.DURABILITY, 0, false);
         meta.setCustomModelData(104);
